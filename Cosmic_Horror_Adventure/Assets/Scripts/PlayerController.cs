@@ -5,7 +5,9 @@ public class PlayerController : MonoBehaviour
 {
     // Public Variables
     public float MoveSpeed = 5f;
+    public GameObject CurrentInteractable;
 
+    // private variables
     private Vector2 MoveVal;
 
     void FixedUpdate()
@@ -13,7 +15,8 @@ public class PlayerController : MonoBehaviour
         transform.Translate(MoveVal * MoveSpeed * Time.deltaTime);
     }
 
-    void OnMove(InputValue input) {
+    void OnMove(InputValue input)
+    {
         MoveVal = input.Get<Vector2>();
     }
 
