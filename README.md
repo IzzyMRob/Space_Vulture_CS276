@@ -1,11 +1,7 @@
-# Game Name
- **Final Project - CS 276**
+# Game Name 
+**Izzy Robbins**
  
- **Izzy Robbins**
- 
- Fall 2025
- 
- Prof. Cordova
+Fall 2025 - CS 286 - Professor Cordova
 
 ## Links
 - Progress Document: https://docs.google.com/document/d/1xEnDghxJFQbVsEMf7Mnj5pz0h4aeiM8_mdEgCY3ZgwE/edit?tab=t.0
