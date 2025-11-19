@@ -1,7 +1,7 @@
 # Cosmic Horror Adventure (Better name pending)
 
 ## Play the Game
-**Unity Play Link**: N/A
+**Unity Play Link**: https://play.unity.com/en/games/ccf3a793-8eb5-44e1-89e0-54275d17c038/cosmic-horror-adventure
 
 ## Game Overview
 In 1976 Will Crowther created the game Colossal Cave Adventure, also known as Adventure. This was one of the first text-based games ever created, and it pioneered the genre of "adventure games.
