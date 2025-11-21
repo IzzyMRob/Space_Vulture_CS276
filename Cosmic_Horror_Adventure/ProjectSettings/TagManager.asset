@@ -12,9 +12,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Floor
+  - Walls
+  - Pickups
   - 
   - 
   - 
@@ -42,5 +42,23 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Floor
+    uniqueID: 1777973429
+    locked: 0
+  - name: Walls
+    uniqueID: 2737543303
+    locked: 0
+  - name: Doors
+    uniqueID: 2194763017
+    locked: 0
+  - name: Pickups
+    uniqueID: 2182218711
+    locked: 0
+  - name: Player
+    uniqueID: 132808275
+    locked: 0
   m_RenderingLayers:
   - Default
+  - Floor
+  - Walls
+  - Pickups
