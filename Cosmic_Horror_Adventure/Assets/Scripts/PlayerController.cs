@@ -10,10 +10,35 @@ public class PlayerController : MonoBehaviour
     // private variables
     Vector2 MoveVal;
     UIController uiController;
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
+
+    void Start() {
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
     void FixedUpdate()
     {
         transform.Translate(MoveVal * MoveSpeed * Time.deltaTime);
+        
+        if (MoveVal[0] + MoveVal[1] == 0) { // no input
+            animator.Play("Idle");
+        } 
+        if (MoveVal[1] < 0) { // down in y
+            animator.Play("WalkDown");
+        }
+        if (MoveVal[1] > 0) { // up in y
+            animator.Play("WalkUp");
+        }
+        if (MoveVal[0] < 0) { // left in x
+            gameObject.transform.localScale = new Vector3(-1, 1, 1);
+            animator.Play("WalkSide");
+        } 
+        if (MoveVal[0] > 0) { // right in x
+            gameObject.transform.localScale = new Vector3(1, 1, 1);
+            animator.Play("WalkSide");
+        }
     }
 
     void OnMove(InputValue input)
