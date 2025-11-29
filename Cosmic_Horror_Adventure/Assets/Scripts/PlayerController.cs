@@ -22,20 +22,20 @@ public class PlayerController : MonoBehaviour
     {
         transform.Translate(MoveVal * MoveSpeed * Time.deltaTime);
         
-        if (MoveVal[0] + MoveVal[1] == 0) { // no input
+        if (MoveVal[0] == 0 && MoveVal[1] == 0) { // no input
             animator.Play("Idle");
         } 
-        if (MoveVal[1] < 0) { // down in y
+        else if (MoveVal[1] < 0) { // down in y
             animator.Play("WalkDown");
         }
-        if (MoveVal[1] > 0) { // up in y
+        else if (MoveVal[1] > 0) { // up in y
             animator.Play("WalkUp");
         }
-        if (MoveVal[0] < 0) { // left in x
+        else if (MoveVal[0] < 0) { // left in x
             gameObject.transform.localScale = new Vector3(-1, 1, 1);
             animator.Play("WalkSide");
         } 
-        if (MoveVal[0] > 0) { // right in x
+        else if (MoveVal[0] > 0) { // right in x
             gameObject.transform.localScale = new Vector3(1, 1, 1);
             animator.Play("WalkSide");
         }
