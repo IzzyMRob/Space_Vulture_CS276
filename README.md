@@ -1,4 +1,4 @@
-# Cosmic Horror Adventure (Better name pending)
+# Space Vulture
 
 ## Play the Game
 **Unity Play Link:** https://play.unity.com/en/games/ccf3a793-8eb5-44e1-89e0-54275d17c038/cosmic-horror-adventure
