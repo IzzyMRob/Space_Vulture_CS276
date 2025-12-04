@@ -10,6 +10,12 @@ public class UIController : MonoBehaviour
     public GameObject Canvas;
     bool Active;
 
+    void Start()
+    {
+        Canvas.SetActive(true);
+        Canvas.SetActive(false);
+    }
+
     public void ToggleInventory()
     {
         // if already on, turn it off
