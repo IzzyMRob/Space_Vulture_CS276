@@ -1,0 +1,57 @@
+.container {
+    flex-grow: 1;
+    width: 75%;
+    height: 75%;
+    max-width: none;
+    max-height: 75%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: auto;
+    margin-top: 5%;
+}
+
+.inventory {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(28, 32, 36);
+    border-top-color: rgb(255, 197, 0);
+    border-top-width: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header {
+    flex-grow: 0;
+    font-size: 18px;
+    color: rgb(255, 197, 0);
+    border-bottom-color: rgb(64, 74, 82);
+    border-bottom-width: 1px;
+    margin-bottom: 10px;
+}
+
+.slotContainer {
+    width: auto;
+    height: auto;
+    margin: 5px;
+    border-left-color: rgb(48, 48, 48);
+    border-right-color: rgb(48, 48, 48);
+    border-top-color: rgb(48, 48, 48);
+    border-bottom-color: rgb(48, 48, 48);
+    background-color: rgb(9, 19, 21);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.slotIcon {
+    flex-shrink: 0;
+    flex-grow: 1;
+    padding: 15px;
+    background-image: url("/Assets/Images/Misc/InventorySlot.png");
+}

@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Inventory.uss?fileID=7433441132597879392&amp;guid=8e91c17fd1b21e84692059fc29df9af6&amp;type=3#Inventory" />
+    <ui:VisualElement name="Container" class="container">
+        <ui:VisualElement name="Inventory" class="inventory">
+            <ui:Label text="Inventory" name="Header" class="header" />
+            <ui:VisualElement name="SlotContainer" class="slotContainer" style="flex-direction: row; flex-wrap: wrap; justify-content: center;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
