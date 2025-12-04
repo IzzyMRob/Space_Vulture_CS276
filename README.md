@@ -49,7 +49,7 @@ Base:
 - 
 
 ### Technical Details
-- Unity Version 6000.2.1f1
+- Unity Version 6000.2.14f1
 - Packages/Plugins used:
   - Cinemachine
   - WebGL
