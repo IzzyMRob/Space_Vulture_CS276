@@ -65,8 +65,13 @@ Base:
 **Successes**:
 
 **Challenges**: 
+- Getting the Inventory UI to display the Item Slots, for some reason every time after the first time I toggle it on or off it doesn't appear.
+- Creating my own assets. While I do love doing this part is greatly increases the effort I am putting in to the game.
 
 **Learning Outcomes**:
+- I feel a lot more confident in creating more complicated internal game systems now. Before I was keeping everything very simple, but the Items and Doors especially in this project forced me out of my comfort zone.
+- 
 
 ## Future Development Aspirations
-- 
+- I would like to add a combat aspect to the game after the player reaches the ship's bridge. I think it would be fun to give them two options like I did in my text-based version. The bridge activates the ship's security robots and the player can either sneak past or fight through them to reach their ship and escape. While the time constraints of this project didn't let me acomplish this much, I hope to in the future.
+- Making some improvements to the visual environment would be great, I feel like a lot of it looks very similar right now.
