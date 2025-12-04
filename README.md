@@ -35,6 +35,8 @@ Base:
 - [X] Entire Map Created
 - [X] Player Animations
 - [X] Inventory Menu Appears
+- [ ] Objects have Credit Values
+- [ ] Display Player's Current Income
 - [ ] Inventory Menu Populates with Items
 - [ ] Starting Story
 - [ ] Pause Menu
