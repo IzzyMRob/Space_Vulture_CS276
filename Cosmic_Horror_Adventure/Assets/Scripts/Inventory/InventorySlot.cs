@@ -30,15 +30,17 @@ namespace Assets.WUG.Scripts
 
         public void HoldItem(string name, Sprite sprite)
         {
-            // set name
+            Debug.Log("HoldItem Called for: " + name);
             ItemGuid = name;
-            // new image, add to class, update image
-            Debug.Log("HoldItem Called");
-            Icon = new Image();
             Icon.sprite = sprite;
-            Debug.Log(Icon.sprite);
-            Icon.SetEnabled(true);
-            Add(Icon);
+            Icon.style.display = DisplayStyle.Flex;
+        }
+
+        public void ClearItem()
+        {
+            ItemGuid = "";
+            Icon.sprite = null;
+            Icon.style.display = DisplayStyle.None;
         }
     }
 }

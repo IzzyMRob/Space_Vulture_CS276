@@ -18,9 +18,11 @@ public abstract class Interactable : MonoBehaviour
         // turn on interaction pop-up, set player's current interactable to this one
         if (collider.gameObject.tag == "Player")
         {
+            Debug.Log(gameObject.name + " - Player entered trigger zone");
             PopUp.SetActive(true);
             PlayerObj = collider.gameObject;
             PlayerObj.GetComponent<PlayerController>().SetCurrentInteractable(gameObject);
+            Debug.Log("CurrentInteractable set to: " + gameObject.name);
         }
 
     }

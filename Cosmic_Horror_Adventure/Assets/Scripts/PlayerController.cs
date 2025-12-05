@@ -50,6 +50,15 @@ public class PlayerController : MonoBehaviour
 
     void OnInteract()
     {
+        Debug.Log("OnInteract called");
+        
+        if (CurrentInteractable == null)
+        {
+            Debug.LogWarning("No interactable object nearby");
+            return;
+        }
+
+        Debug.Log("Interacting with: " + CurrentInteractable.name);
         CurrentInteractable.GetComponent<Interactable>().Use();
     }
 
