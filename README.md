@@ -57,7 +57,7 @@ Base:
 
 ### Credits
 - Implementation:
-  - Followed Tutorial for Inventory UI: https://github.com/Yecats/GameDevTutorials/tree/master/tutorials/Unity/Create-an-Inventory-UI-with%20UI-Toolkit
+  - Partially Followed Tutorial for Inventory UI: https://github.com/Yecats/GameDevTutorials/tree/master/tutorials/Unity/Create-an-Inventory-UI-with%20UI-Toolkit
 - Audio
   - TBD
 - Visual
@@ -67,8 +67,9 @@ Base:
 **Successes**:
 
 **Challenges**: 
-- Getting the Inventory UI to display the Item Slots, for some reason every time after the first time I toggle it on or off it doesn't appear.
-- Creating my own assets. While I do love doing this part is greatly increases the effort I am putting in to the game.
+- Getting the Inventory UI to display the Item Slots, it was removing the boxes each time I set it active/inactiv.
+- Getting the inventory boxes to populate with Item sprites was also difficult, 
+- Creating my own assets. While I do love doing this part it greatly increases the effort I am putting in to the game.
 
 **Learning Outcomes**:
 - I feel a lot more confident in creating more complicated internal game systems now. Before I was keeping everything very simple, but the Items and Doors especially in this project forced me out of my comfort zone.
