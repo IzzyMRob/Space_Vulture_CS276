@@ -21,24 +21,24 @@ namespace Assets.WUG.Scripts
         {
             //Create a new Image element and add it to the root
             Icon = new Image();
-            ItemImage = new Image();
             Add(Icon);
-            Add(ItemImage);
 
             //Add USS style properties to the elements
-            ItemImage.AddToClassList("itemImage");
             Icon.AddToClassList("slotIcon");
             AddToClassList("slotContainer");
         }
 
         public void HoldItem(string name, Sprite sprite)
         {
-            Icon = new Image();
-            Add(Icon);
-            Debug.Log(name);
-            Debug.Log(sprite);
-            Icon.image = sprite.texture;
+            // set name
             ItemGuid = name;
+            // new image, add to class, update image
+            Debug.Log("HoldItem Called");
+            Icon = new Image();
+            Icon.sprite = sprite;
+            Debug.Log(Icon.sprite);
+            Icon.SetEnabled(true);
+            Add(Icon);
         }
     }
 }

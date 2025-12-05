@@ -35,7 +35,7 @@ namespace Assets.WUG.Scripts
             }
 
             PopulateInventory();
-        }        
+        }       
 
         public void PopulateInventory()
         {
