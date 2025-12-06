@@ -64,11 +64,4 @@ public class PlayerController : MonoBehaviour
         uiController.TogglePause();
     }
 
-    public void SetCurrentInteractable(GameObject NewInteractable)
-    {
-        CurrentInteractable = NewInteractable;
-    }
-
-
-
 }

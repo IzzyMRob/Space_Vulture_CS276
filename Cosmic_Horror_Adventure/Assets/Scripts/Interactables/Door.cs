@@ -21,7 +21,7 @@ public class Door : Interactable
         if (Required == "" | Inventory.IsHolding(Required)) {
             Vector3 con_pos = Connection.transform.position;
             PlayerObj.transform.position = con_pos;
-            PlayerObj.GetComponent<PlayerController>().SetCurrentInteractable(Connection);
+            StartCoroutine(SetNewInteractable());
         // we need something and we dont have it
         } else {
             StartCoroutine(ShowNoMessage());
@@ -40,6 +40,11 @@ public class Door : Interactable
         NoMessage.SetActive(false);
     }
 
+IEnumerator SetNewInteractable() 
+{
+        yield return new WaitForSeconds(.2f);
+        PlayerObj.GetComponent<PlayerController>().CurrentInteractable = Connection;
+    }
 
 
 }

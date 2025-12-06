@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Reflection.Emit;
 using Assets.WUG.Scripts;
 using TMPro;
 using UnityEngine;
@@ -7,17 +8,19 @@ public class PlayerInventory : MonoBehaviour
 {
     public Dictionary<string, Sprite> HeldItems;
     public GameObject UserInterface;
-    private InventoryUIController InventoryUIController;
+    public GameObject IncomeLabel;
+    private int Income = 0;
 
     void Start()
     {
         HeldItems = new Dictionary<string, Sprite>();
-        InventoryUIController = UserInterface.GetComponent<InventoryUIController>();
     }
 
     public void Add(string name, Sprite sprite, int value)
     {
         HeldItems.Add(name, sprite);
+        Income += value;
+        IncomeLabel.GetComponent<TMP_Text>().text = Income + " Credits";
     }
 
     public bool IsHolding(string name) 
@@ -29,5 +32,4 @@ public class PlayerInventory : MonoBehaviour
             return false;
         }
     }
-
 }

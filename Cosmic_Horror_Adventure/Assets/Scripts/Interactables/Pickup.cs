@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -10,7 +11,6 @@ public class Pickup : Interactable
     public override void Use()
     {
         // remove object from world, add to player inventory
-        Debug.Log(value);
         PlayerObj.GetComponent<PlayerInventory>().Add(Name, sprite, value);
         Destroy(gameObject);
     }

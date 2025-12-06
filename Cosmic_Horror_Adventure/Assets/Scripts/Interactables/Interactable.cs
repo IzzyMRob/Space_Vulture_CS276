@@ -20,7 +20,7 @@ public abstract class Interactable : MonoBehaviour
         {
             PopUp.SetActive(true);
             PlayerObj = collider.gameObject;
-            PlayerObj.GetComponent<PlayerController>().SetCurrentInteractable(gameObject);
+            PlayerObj.GetComponent<PlayerController>().CurrentInteractable = gameObject;
         }
 
     }

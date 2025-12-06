@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+using System.Collections;
 using Assets.WUG.Scripts;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -9,16 +9,21 @@ using Unity.VisualScripting;
 public class UIController : MonoBehaviour
 {
     public GameObject Canvas;
+    public GameObject StartingScenes;
     private GameObject DarkOverlay;
     private GameObject InventoryUI;
     private GameObject PauseUI;
+    private GameObject ScreamingFrogLogo;
+    private GameObject IntroText;
     
     void Start()
     {
         DarkOverlay = Canvas.transform.GetChild(0).gameObject;
         InventoryUI = Canvas.transform.GetChild(1).gameObject;
         PauseUI = Canvas.transform.GetChild(2).gameObject;
-        Debug.Log(DarkOverlay);
+        ScreamingFrogLogo = StartingScenes.transform.GetChild(0).gameObject;
+        IntroText = StartingScenes.transform.GetChild(1).gameObject;
+        PlayStartingScenes();
     }
 
     public void ToggleInventory()
@@ -52,5 +57,22 @@ public class UIController : MonoBehaviour
             PauseUI.SetActive(true);
             Time.timeScale = 0;
         }
+    }
+
+    private void PlayStartingScenes()
+    {
+        Debug.Log("PlayStartingScenes called");
+        StartCoroutine(TimedStartingScenes());
+    }
+
+    IEnumerator TimedStartingScenes()
+    {
+        Debug.Log("EnumeratorEntered");
+        ScreamingFrogLogo.SetActive(true);
+        yield return new WaitForSeconds(3);
+        ScreamingFrogLogo.SetActive(false);
+        IntroText.SetActive(true);
+        yield return new WaitForSeconds(15);
+        IntroText.SetActive(false);
     }
 }

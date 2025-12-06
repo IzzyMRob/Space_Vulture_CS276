@@ -18,7 +18,6 @@ namespace Assets.WUG.Scripts
         public Image Icon;
         public string ItemGuid = "";
         public Image ItemImage;
-        public Label Text;
 
         public InventorySlot()
         {
@@ -26,12 +25,8 @@ namespace Assets.WUG.Scripts
             Icon = new Image();
             Add(Icon);
 
-            Text = new Label();
-            Add(Text);
-
             //Add USS style properties to the elements
             Icon.AddToClassList("slotIcon");
-            Text.AddToClassList("slotText");
             AddToClassList("slotContainer");
             
         }
@@ -40,16 +35,12 @@ namespace Assets.WUG.Scripts
         {
             ItemGuid = name;
             Icon.sprite = sprite;
-            Text.text = name;
-
-
         }
 
         public void ClearItem()
         {
             ItemGuid = "";
             Icon.sprite = null;
-            Text.text = "";
         }
     }
 }
